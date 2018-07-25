@@ -1,0 +1,36 @@
+{
+  "name": "vue-test",
+  "version": "1.0.0",
+  "description": "Minos Creative website base",
+  "author": "minoscreative",
+  "private": true,
+  "scripts": {
+    "dev": "nuxt",
+    "build": "nuxt build",
+    "start": "nuxt start",
+    "generate": "nuxt generate",
+    "lint": "eslint --ext .js,.vue --ignore-path .gitignore .",
+    "precommit": "npm run lint"
+  },
+  "dependencies": {
+    "@nuxtjs/axios": "^5.0.0",
+    "@nuxtjs/google-analytics": "^2.0.2",
+    "@nuxtjs/sitemap": "^0.1.1",
+    "nuxt-edge": "^2.0.0-25481399.feabdca",
+    "parallax-js": "^3.1.0",
+    "rellax": "^1.6.2",
+    "vue-scrollto": "^2.11.0",
+    "vue2-google-maps": "^0.10.0"
+  },
+  "devDependencies": {
+    "babel-eslint": "^8.2.1",
+    "cross-env": "^5.0.1",
+    "eslint": "^4.15.0",
+    "eslint-loader": "^2.0.0",
+    "eslint-plugin-vue": "^4.0.0",
+    "image-webpack-loader": "^4.3.1",
+    "node-sass": "^4.9.0",
+    "sass-loader": "^7.0.3",
+    "style-loader": "^0.21.0"
+  }
+}

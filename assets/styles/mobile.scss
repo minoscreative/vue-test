@@ -1,0 +1,197 @@
+$heading-font: 'Montserrat', 'Helvetica Neue', Arial, sans-serif;
+$content-font: 'Hind', 'Helvetica Neue', Arial, sans-serif;
+
+$heading-h1-weight: 800;
+$heading-weight: 700;
+$content-weight: 400;
+$content-bold: 600;
+
+$heading-colour: #17171f;
+$content-grey: #4d5061;
+
+$color-green: #0cce6b;
+
+
+@media screen and (max-width: 749px) {
+
+    /* -------- General ---------- */
+    html, body {
+        font-size: 16px;
+        line-height: 2;
+    }
+    .container {
+        width: 100%;
+        padding: 0px 32px;
+    }
+    .grid-container {
+        width: 100%;
+        padding: 0px 32px;
+    }
+    .content-block {
+        padding: 80px 0;
+    }
+    .title-block {
+        padding: 50px 0 50px 0;
+    }
+    h1 {
+        font-size: 36px;
+        letter-spacing: -0.5px;
+        line-height: 1.2;
+    }
+    h2 {
+        font-size: 31px;
+        letter-spacing: -0.5px;
+        line-height: 1.2;
+    }
+    h3 {
+        font-size: 18px;
+        letter-spacing: -0.2px;
+        line-height: 1.2;
+    }
+
+    .hide-mobile {
+        display: none;
+    }
+    .mobile-no-pad {
+        padding-top: 0;
+    }
+   
+    /* -------- Navigation ---------- */
+    .nav-logo {
+        margin-top: 15px;
+        width: 100px;
+    }
+    .nav-is-open {
+        overflow: hidden;
+        height: 100vh;
+    }
+    .navigation {
+        padding: 5px 0;
+
+        .container {
+            .nav-block {
+                position: fixed;
+                top: 0;
+                left: 100%;
+                width: 100%;
+                height: 100%;
+                background: #f9f9f9;
+                z-index: 20;
+                overflow-y: scroll;
+                -webkit-overflow-scrolling: touch;
+        
+                transition: 0.5s ease-in-out;
+                transition-delay: .2s;
+                
+                &.open-nav {
+                   transform: translateX(-100%);
+                }
+                
+                ul {
+                    padding: 80px 0 80px 0;
+                }
+
+                li {
+                   width: 100%;
+                   padding: 0px 32px;
+                }
+
+                .nav-btn {
+                    color: $content-grey;
+                    font-size: 26px;
+                    font-family: $heading-font;
+                    font-weight: $heading-h1-weight;
+                    letter-spacing: -0.5px;
+                    line-height: 1.1;
+                    padding: 10px 0;
+
+                    &:hover {
+                        color: $color-green;
+                        text-decoration: none;
+                    }
+                }
+            }
+
+            .nav-phone-number {
+                margin-top: 20px;
+                font-size: 20px;
+            }
+        }
+    }
+
+
+    /* -------- Home Page ---------- */
+    .home-header {
+
+        .home-white-content {
+            padding: 50px 0;
+        }
+    }
+    .home-scene {
+        position: relative;
+        min-height: 400px;
+        height: 60vh;
+    }
+    .home-background {
+        bottom: 0;
+        height: 70%;
+    }
+
+    .home-audi-bg {
+        justify-content: center;
+        height: 50vh;
+        min-height: 300px;
+        margin-bottom: 80px;
+    
+        img {
+            height: 100%;
+        }
+    }
+    .home-services-list {
+        padding: 10px 0px;
+
+        .home-services-hover {
+            top: 0px;
+            left: -20px;
+            width: calc(100% + 40px);
+            height: 100%;
+        }
+    }
+    .badges-grid {
+        display: flex;
+        flex-wrap: nowrap;
+        overflow: scroll;
+        width: calc(100% + 64px);
+        margin-left: -32px;
+        -webkit-overflow-scrolling: touch;
+    
+        li {
+            min-width: 150px;
+            height: 150px;
+            margin: 1px;
+    
+            img {
+                width: 70%;
+            }
+        }
+    }
+    .home-gallery {
+        padding: 150px 0;
+    }
+    .home-process-collage {
+        padding-top: 50px;
+    }
+
+
+    /* -------- Footer ---------- */
+    .footer {
+        padding: 50px 0;
+    
+        .footer-tel {
+            font-size: 24px;
+        }
+    }
+    .second-footer {
+        text-align: center;
+    }
+}
